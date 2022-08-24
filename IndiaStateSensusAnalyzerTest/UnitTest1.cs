@@ -13,7 +13,7 @@ namespace IndiaStateSensusAnalyzerTest
         static string wrongdelimeterFilePath = @"C:\Users\LENOVO\source\repos\IndiaStateSensusAnalyzerAssignment\IndiaStateSensusAnalyzerTest\CSV\DelimiterIndiaStateCensusData.csv";
         static string wrongFilePath = @"C:\Users\LENOVO\source\repos\IndianStateCensusAnalyzer\CensualAnalyzerTest\CsvFiles\IndiaStateCensusData1.csv";
         CensusAnalyser censusAnalyser;
-        Dictionary<string, CensusDTO> totalRecord;
+        Dictionary<string, CensusDTO> totalRecord; 
 
         [SetUp]
         public void Setup()

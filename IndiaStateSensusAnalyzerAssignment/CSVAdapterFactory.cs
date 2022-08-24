@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IndiaStateSensusAnalyzerAssignment
 {
-    class CSVAdapterFactory
+    class CSVAdapterFactory 
     {
         public Dictionary<string, CensusDTO> LoadCsvData(CensusAnalyser.Country country, string csvFilePath, string dataHeaders)
         {
