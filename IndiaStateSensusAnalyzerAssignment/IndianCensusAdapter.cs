@@ -24,6 +24,8 @@ namespace IndiaStateSensusAnalyzerAssignment
                 string[] column = data.Split(","); // the data from file is split where comma is found and store in array
                 if (csvFilePath.Contains("IndiaStateCensusData.csv")) // if this condition becomes true then the records are added in dictionary
                     dataMap.Add(column[0], new CensusDTO(new POCO.CensusDataDAO(column[0], column[1], column[2], column[3])));
+                if (csvFilePath.Contains("IndiaStateCode.csv"))// if this condition becomes true then the records are added in dictionary
+                    dataMap.Add(column[1], new CensusDTO(new POCO.StateCodeDAO(column[0], column[1], column[2], column[3])));
             }
             return dataMap.ToDictionary(p => p.Key, p => p.Value);
         }
